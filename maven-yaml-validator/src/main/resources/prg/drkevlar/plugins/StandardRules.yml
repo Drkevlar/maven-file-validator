@@ -1,0 +1,105 @@
+yaml-files:
+  - '.*\.yaml'
+  - '.*\.yml'
+  - '\.yamllint'
+  -
+#log level: может быть трех типов: error, warning, info
+#error блокирует сборку
+#warning подсвечивает
+#info распечатывает
+rules:
+  #
+  anchors:
+    level: error
+
+  # Проверка скобок, максимальное ко-во пробелов между скобками
+  braces:
+    level: error
+    max-spaces-inside: 1
+
+  # Проверка квадратных скобок, максимальное ко-во пробелов между скобками
+  brackets:
+    level: error
+    max-spaces-inside: 1
+
+  # проверка лишних пробелов
+  colons:
+    level: error
+
+  # Проверка запятых
+  commas:
+    level: error
+
+  # Проверка комментариев
+#  comments:
+#    level: warning
+
+  # Проверка отступов для комментариев
+#  comments-indentation:
+#    level: warning
+
+  # Проверка наличия признака "..." в конце документа
+#  document-end:
+#    level: warning
+
+  # Проверка наличия признака "---" в начале документа
+#  document-start:
+#    level: warning
+
+  # Проверка пустых строк
+#  empty-lines:
+#    level: warning
+
+  # Проверка пустых значений (values)
+  empty-values:
+    level: warning
+
+  #
+  float-values:
+    level: warning
+
+  #
+  hyphens:
+    level: warning
+
+  # Проверка отступов (интендации)
+  indentation:
+    level: error
+    indent-sequences: consistent
+
+  # Проверка наличия дублированных ключей
+  key-duplicates:
+    level: error
+
+  # Проверка сортировки ключей
+#  key-ordering:
+#    level: warning
+
+  # Проверка ограничения длины строки
+#  line-length:
+#    level: warning
+#    allow-non-breakable-inline-mappings: true
+
+  # Проверка наличия символа переноса строки в конце файла
+#  new-line-at-end-of-file:
+#    level: warning
+
+  # Проверка наличия переноса строки перед ключами
+  new-lines:
+    level: warning
+
+  # Проверка восьмеричных значений
+  octal-values:
+    level: warning
+
+  # Проверка наличия строк которые не обрамлены в кавычки
+  quoted-strings:
+    level: info
+
+  # Проверка наличия пустых пробелов перед/после
+  trailing-spaces:
+    level: error
+
+  #
+  truthy:
+    level: error
